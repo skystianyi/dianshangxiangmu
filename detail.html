@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>详情页</title>
+		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
+		<link rel="stylesheet" type="text/css" href="css/magnifier.css">
+		<script src="http://libs.baidu.com/jquery/1.7.0/jquery.min.js"></script>
+	    <script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="top">
+			<div class="top1">
+				<div class="top-left">
+					<form>
+						<div>
+							<span>中国大陆</span>
+								<ul>
+									<li><a href="">全球</a></li>
+									<li>中国香港</li>
+									<li>台湾</li>
+									<li>澳门</li>
+									<li>香港</li>
+									<li>新加坡</li>
+									<li>韩国</li>
+								</ul>
+						</div>
+					</form>
+					<a class="tl1" href="./login.html?__hbt=1551084555858" target="_blank">亲，请登录</a>
+					<a class="tl2" href="./regist.html?__hbt=1551084584618" target="_blank">免费注册</a>
+					<a class="tl3" href="https://www.taobao.com/m?spm=a21bo.2017.1997563273.1.5af911d9lPzrAr">手机逛淘宝</a>
+				</div>
+				<div class="top-right">
+					<form class="tr1">
+						<select class="slt1">
+							<option>我的淘宝</option>
+						</select>
+						<ul class="diyi">
+							<li>已买到的宝贝</li>
+							<li>我的足迹</li>
+						</ul>
+						<div class="slt2">
+							<a  href="./cart.html?__hbt=1551317685036" target="_blank">购物车<span>0</span></a>
+						</div>
+						<select class="slt3" value="收藏夹">
+							<option>收藏夹</option>
+						</select>
+						<ul>
+							<li>收藏的店铺</li>
+							<li>收藏的宝贝</li>
+						</ul>
+					</form>
+					<a href="#">商家分类</a>
+					<form class="tr2">
+						<select class="slt1">
+							<option>卖家中心</option>
+							<option>买家中心</option>
+						</select>
+						<ul>
+							<li>免费开店</li>
+							<li>已卖出的宝贝</li>
+							<li>免费开店</li>
+							<li>已卖出的宝贝</li>
+							<li>免费开店</li>
+							<li>已卖出的宝贝</li>
+						</ul>
+						<select class="slt2">
+							<option>联系客服</option>
+							<option>联系我们</option>
+						</select>
+						<ul>
+							<li>消费者客服</li>
+							<li>卖家客服</li>
+						</ul>
+						<select class="slt3">
+							<option>网站导航</option>
+						</select>
+						<div class="bigbox">
+							<div class="one-box">
+								<h3>主题市场</h3>
+								<ul>
+									<li><a href="">女装</a></li>
+									<li><a href="">男装</a></li>
+									<li><a href="">内衣品</a></li>
+									<li><a href="">鞋靴</a></li>
+									<li><a href="">箱包</a></li>
+									<li><a href="">女装</a></li>
+									<li><a href="">男装</a></li>
+									<li><a href="">内衣</a></li>
+									<li><a href="">鞋靴</a></li>
+									<li><a href="">箱包</a></li>
+								</ul>
+							</div>
+							<div class="two-box">
+								<h3>特色市场</h3>
+								<ul>
+									<li><a href="">爱逛街</a></li>
+									<li><a href="">美妆秀</a></li>
+									<li><a href="">全球购</a></li>
+									<li><a href="">淘女郎</a></li>
+									<li><a href="">星甸</a></li>
+									<li><a href="">女装</a></li>
+									<li><a href="">男装</a></li>
+									<li><a href="">内衣</a></li>
+									<li><a href="">鞋靴</a></li>
+									<li><a href="">箱包</a></li>
+								</ul>
+							</div>
+							<div class="three-box">
+								<h3>阿里APP</h3>
+								<ul>
+									<li><a href="">淘宝</a></li>
+									<li><a href="">天猫</a></li>
+									<li><a href="">支付宝</a></li>
+									<li><a href="">聚划算</a></li>
+									<li><a href="">飞猪</a></li>
+									<li><a href="">女装</a></li>
+									<li><a href="">男装</a></li>
+									<li><a href="">内衣</a></li>
+									<li><a href="">鞋靴</a></li>
+									<li><a href="">箱包</a></li>
+								</ul>
+							</div>
+							<div class="four-box">
+								<h3>精彩推荐集</h3>
+								<ul>
+									<li><a href="">余额宝</a></li>
+									<li><a href="">大牌捡包</a></li>
+									<li><a href="">淘公仔</a></li>
+									<li><a href="">浏览器</a></li>
+									<li><a href="">大众</a></li>
+									<li><a href="">女装</a></li>
+									<li><a href="">男装</a></li>
+									<li><a href="">内衣</a></li>
+									<li><a href="">鞋靴</a></li>
+									<li><a href="">箱包</a></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="logoY">
+			<div class="logoY-r">
+				<div class="top">
+					<div class="hezi">
+						<form>
+							<input type="text" id="txt" placeholder="搜索 天猫 商品/品牌/店铺"/>
+							<input type="button" id="btn" value="搜天猫" />
+						</form>
+					</div>
+					<div class="hezi-t">
+						<a href="#">搜本店</a>
+					</div>
+				</div>
+				<div class="bottom">
+					<ul>
+						<li><a href="#">手机</a></li>
+						<li><a href="#">荣耀v20</a></li>
+						<li><a href="#">荣耀</a></li>
+						<li><a href="#">v20</a></li>
+						<li><a href="#">华为荣耀v20</a></li>
+						<li><a href="#">honor荣耀</a></li>
+						<li><a href="#">华为荣耀</a></li>
+						<li><a href="#">荣耀手机</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<a href="#"><img src="img/124.jpg"/></a>
+		</div>
+		<div class="nav">
+			<div class="nav-l">
+				<a href="#">全部商品分类</a>
+			</div>
+			<div class="nav-r">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">荣耀畅玩8A</a></li>
+					<li><a href="#">荣耀V20</a></li>
+					<li><a href="#">手机专区</a></li>
+					<li><a href="#">笔记本/平板</a></li>
+					<li><a href="#">穿戴/路由</a></li>
+					<li><a href="#">精品配件</a></li>
+					<li><a href="#">售后服务</a></li>
+					<li><a href="#">笔记本/平板</a></li>
+					<li><a href="#">穿戴/路由</a></li>
+					<li><a href="#">精品配件</a></li>
+				</ul>
+			</div>
+			</div>
+		<div class="shangpin">
+			<div class="magnifier" id="magnifier1">
+				<div class="magnifier-container">
+				<div class="images-cover">
+					
+				</div>
+				<!--当前图片显示容器-->
+				<div class="move-view"></div>
+				<!--跟随鼠标移动的盒子-->
+			</div>
+			<div class="magnifier-assembly">
+				<div class="magnifier-btn">
+				<span class="magnifier-btn-left">&lt;</span>
+				<span class="magnifier-btn-right">&gt;</span>
+				</div>
+				<!--按钮组-->
+				<div class="magnifier-line">
+					<ul class="clearfix animation03">
+						<li>
+							<div class="small-img">
+								<img src="img/1111.jpg"/>
+							</div>
+						</li>
+						<li>
+							<div class="small-img">
+								<img src=""/>
+							</div>
+						</li>
+						<li>
+							<div class="small-img">
+								<img src=""/>
+							</div>
+						</li>
+						<li>
+							<div class="small-img">
+								<img src=""/>
+							</div>
+						</li>
+						<li>
+							<div class="small-img">
+								<img src=""/>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--缩略图-->
+			</div>
+			<div class="magnifier-view"></div>
+			<!--经过放大的图片显示容器-->
+			</div>
+			<div class="shangpin-r">
+				<div class="shangpin-r-l">
+					<ul>
+						<li>价格：￥599</li>
+						<li>属性：盐津铺子 休闲零食 零食大礼包 自营 七夕情人节礼物 辣条 送女友 1320g</li>
+						<li>生产日期：2019年1月17日</li>
+						<li>保质期：12个月</li>
+						<li>注意事项：请勿放在三岁一下儿童能够够着的地方；</li>
+						<li>产品详情；配料：小麦；大豆；大豆油；肉块；</li>
+						<li>产品：非膨化食品；</li>
+					</ul>
+					<ul>
+						<li>月销量：22290</li>
+						<li>累计评价：22266</li>
+						<li>送天猫积分200分起</li>
+					</ul>
+				</div>
+				<div class="shangpin-r-r">
+						<a id="buylj" href="#">加入购物车</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<ul>
+				<li><a href="#">阿里巴巴集团</a></li>
+				<li><a href="#">淘宝网</a></li>
+				<li><a href="#">天猫</a></li>
+				<li><a href="#">聚划算</a></li>
+				<li><a href="#">全球速卖通</a></li>
+				<li><a href="#">阿里巴巴国际交易市场</a></li>
+				<li><a href="#">1688</a></li>
+				<li><a href="#">阿里妈妈</a></li>
+				<li><a href="#">飞猪</a></li>
+				<li><a href="#">阿里云计算</a></li>
+				<li><a href="#">YunOS</a></li>
+				<li><a href="#">阿里通信</a></li>
+				<li><a href="#">一淘</a></li>
+				<li><a href="#">万网</a></li>
+				<li><a href="#">高德</a></li>
+				<li><a href="#">UC</a></li>
+				<li><a href="#">友盟</a></li>
+				<li><a href="#">虾米</a></li>
+				<li><a href="#">阿里星球</a></li>
+				<li><a href="#">钉钉</a></li>
+				<li><a href="#">YunOS</a></li>
+				<li><a href="#">支付宝</a></li>
+				<li><a href="#">优酷</a></li>
+				<li><a href="#">土豆</a></li>
+				<li><a href="#">阿里健康</a></li>
+				<li><a href="#">阿里影业</a></li>
+				<li><a href="#">阿里体育</a></li>
+				<li><a href="#">网商银行</a></li>
+			</ul>
+		</div>
+<script type="text/javascript" src="js/magnifier.js"></script>
+<script type="text/javascript">
+$(function() {
+	var magnifierConfig = {
+		magnifier : "#magnifier1",//最外层的大容器
+		width : 500,//承载容器宽
+		height : 500,//承载容器高
+		moveWidth : null,//如果设置了移动盒子的宽度，则不计算缩放比例
+		zoom : 2//缩放比例
+	};
+	var _magnifier = magnifier(magnifierConfig);
+	
+	$('#buylj').on('click',function(){
+		$.get('http://47.104.244.134:8080/goodsbytid.do',{'tid':13,'page':1,'limit':9},function(data){
+			 var aData=$(data.data);
+		});
+		$.get('http://47.104.244.134:8080/cartsave.do',{'gid':13,'token':getCookie("token")},function(data){
+			if(data.code=="0"){
+				alert('你已经成功加入购物车！');
+				window.location.href="./cart.html?__hbt=1551318330233";
+			}
+		});
+	})
+	$.get('http://47.104.244.134:8080/cartlist.do',{'token':getCookie('token')},function(data){
+//				console.log(data);
+				$('.tr1 .slt2 a span').text(data[0].count);
+			})
+});
+</script>
+<script src="js/shangpinliebiao.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘宝网！用户登录</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div class="head">
+		</div>
+		<div class="banner">
+			<div class="denglu">
+				<div class="top">
+					
+				</div>
+				<div class="bottom">
+					<div class="bottom-t">
+						<form>
+							<input type="text" placeholder="会员名/邮箱/手机号" />
+							<input type="password"/>
+							<img src="img/112.jpg"/>
+							<div class="tjiao">
+								<input id="btn" type="button" value="登录" />
+							</div>
+						</form>
+					</div>
+					<div class="bottom-b">
+						<ul>
+							<li><a href="#">微博登录</a></li>
+							<li><a href="#">支付宝登录</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">忘记密码</a></li>
+							<li><a href="#">忘记会员名</a></li>
+							<li><a href="#">忘记注册</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//用户登录；
+			$(function(){
+				$("#btn").on("click",function(){
+					$.post("http://47.104.244.134:8080/userlogin.do",{"name":$("form input").eq(0).val(),"password":$("form input").eq(1).val()},function(data){
+						if(data.msg=="OK"){
+							var token=data.data.token;
+							setCookie("token",token,7);
+							setCookie("username",$("form input").eq(0).val(),7);
+							window.location.href="index.html";
+						}else{
+							alert("账号或密码输入错误！")
+						}
+					});
+				})
+			})
+		</script>
+	</body>
+</html>

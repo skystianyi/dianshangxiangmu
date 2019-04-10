@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘宝网！用户注册</title>
+		<link rel="stylesheet" type="text/css" href="css/regist.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="top">
+			<div class="top1">
+				<div class="top-left">
+					<a class="tl1" href="./login.html?__hbt=1551076082823" target="_blank">亲，请登录</a>
+					<a class="tl2" href="./regist.html?__hbt=1551075923298">免费注册</a>
+					<a class="tl3" href="https://www.taobao.com/m?spm=a21bo.2017.1997563273.1.5af911d9lPzrAr">手机逛淘宝</a>
+				</div>
+				<div class="top-right">
+					<form class="tr1">
+						<select class="slt1">
+							<option>我的淘宝</option>
+						</select>
+						<ul class="diyi">
+							<li>已买到的宝贝</li>
+							<li>我的足迹</li>
+						</ul>
+						<div class="slt2">
+							<a  href="./%E5%8A%A0%E5%85%A5%E8%B4%AD%E7%89%A9%E8%BD%A6.html?__hbt=1551234164017" target="_blank">购物车</a>
+						</div>
+						<select class="slt3" value="收藏夹">
+							<option>收藏夹</option>
+						</select>
+						<ul>
+							<li>收藏的店铺</li>
+							<li>收藏的宝贝</li>
+						</ul>
+					</form>
+					<a href="#">商家分类</a>
+					<form class="tr2">
+						<select class="slt1">
+							<option>卖家中心</option>
+							<option>买家中心</option>
+						</select>
+						<ul>
+							<li>免费开店</li>
+							<li>已卖出的宝贝</li>
+							<li>免费开店</li>
+							<li>已卖出的宝贝</li>
+							<li>免费开店</li>
+							<li>已卖出的宝贝</li>
+						</ul>
+						<select class="slt2">
+							<option>联系客服</option>
+							<option>联系我们</option>
+						</select>
+						<ul>
+							<li>消费者客服</li>
+							<li>卖家客服</li>
+						</ul>
+						<select class="slt3">
+							<option>网站导航</option>
+						</select>
+						<div class="bigbox">
+							
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<a href="./index.html?__hbt=1551067766399" target="_blank"><img src="img/115.jpg"/></a>
+		</div>
+		<div class="zhuce">
+			<div class="zc">
+				<form>
+					<ul>
+						<li>用户名:
+							<input id="user" type="text" placeholder="请输入用户名" />
+							<!--<span>此用户名已被注册！</span>-->
+						</li>
+						<li>密码：<input id="psd" type="password" placeholder="请输入密码" /></li>
+						<li>邮箱名：<input id="eml" type="email" placeholder="请输入你的邮箱" /></li>
+						<li>性别：<input type="radio" name="sex" value="男" />男<input type="radio" name="sex" value="女" />女</li>
+						<li><input type="button" id="btn" value="提交" /> </li>
+					</ul>  
+				</form>
+				
+			</div>
+		</div>
+		<script type="text/javascript">
+			//用户注册；
+			$(function(){
+				$("#user").on("change",function(){
+					 $.get("http://47.104.244.134:8080/username.do",{"username":$("#user").val()},function(data){
+					 	if(data.code==0){
+					 		$(".zhuce li:nth-of-type(1)").append("<span>此用户名已被注册！</span>");
+					 	}else{
+					 		$(".zhuce li:nth-of-type(1) span").remove();
+					 	}
+					 })
+				})
+				$("#btn").on("click",function(){
+					$.post("http://47.104.244.134:8080/usersave.do",{"username":$("#user").val(),"password":$("#psd").val(),"email":$("#eml").val()+'@qq.com',"sex":$("input[name='sex']:checked").val()},function(data){
+						console.log(data);
+						if(data.msg=="成功"){
+							alert("注册成功！");
+							window.location.href="./login.html?__hbt=1551080308594";
+						}else{
+							alert("该用户名已被使用请重新注册！");
+						}
+					})
+				})
+			})
+		</script>
+	</body>
+</html>

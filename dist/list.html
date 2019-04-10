@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘宝网！列表页</title>
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="top">
+			<div class="top1">
+				<div class="top-left">
+					<form>
+						<div>
+							<span>中国大陆</span>
+								<ul>
+									<li><a href="">全球</a></li>
+									<li>中国香港</li>
+									<li>台湾</li>
+									<li>澳门</li>
+									<li>香港</li>
+									<li>新加坡</li>
+									<li>韩国</li>
+								</ul>
+						</div>
+					</form>
+					<a class="tl1" href="./login.html?__hbt=1551084555858" target="_blank">亲，请登录</a>
+					<a class="tl2" href="./regist.html?__hbt=1551084584618" target="_blank">免费注册</a>
+					<a class="tl3" href="https://www.taobao.com/m?spm=a21bo.2017.1997563273.1.5af911d9lPzrAr">手机逛淘宝</a>
+				</div>
+				<div class="top-right">
+					<form class="tr1">
+						<select class="slt1">
+							<option>我的淘宝</option>
+						</select>
+						<ul class="diyi">
+							<li>已买到的宝贝</li>
+							<li>我的足迹</li>
+						</ul>
+						<div class="slt2">
+							<a  href="./cart.html?__hbt=1551317685036" target="_blank">购物车<span>0</span></a>
+						</div>
+						<select class="slt3" value="收藏夹">
+							<option>收藏夹</option>
+						</select>
+						<ul>
+							<li>收藏的店铺</li>
+							<li>收藏的宝贝</li>
+						</ul>
+					</form>
+					<a href="#">商家分类</a>
+					<form class="tr2">
+						<select class="slt1">
+							<option>卖家中心</option>
+							<option>买家中心</option>
+						</select>
+						<ul>
+							<li>免费开店</li>
+							<li>已卖出的宝贝</li>
+							<li>免费开店</li>
+							<li>已卖出的宝贝</li>
+							<li>免费开店</li>
+							<li>已卖出的宝贝</li>
+						</ul>
+						<select class="slt2">
+							<option>联系客服</option>
+							<option>联系我们</option>
+						</select>
+						<ul>
+							<li>消费者客服</li>
+							<li>卖家客服</li>
+						</ul>
+						<select class="slt3">
+							<option>网站导航</option>
+						</select>
+						<div class="bigbox">
+							<div class="one-box">
+								<h3>主题市场</h3>
+								<ul>
+									<li><a href="">女装</a></li>
+									<li><a href="">男装</a></li>
+									<li><a href="">内衣品</a></li>
+									<li><a href="">鞋靴</a></li>
+									<li><a href="">箱包</a></li>
+									<li><a href="">女装</a></li>
+									<li><a href="">男装</a></li>
+									<li><a href="">内衣</a></li>
+									<li><a href="">鞋靴</a></li>
+									<li><a href="">箱包</a></li>
+								</ul>
+							</div>
+							<div class="two-box">
+								<h3>特色市场</h3>
+								<ul>
+									<li><a href="">爱逛街</a></li>
+									<li><a href="">美妆秀</a></li>
+									<li><a href="">全球购</a></li>
+									<li><a href="">淘女郎</a></li>
+									<li><a href="">星甸</a></li>
+									<li><a href="">女装</a></li>
+									<li><a href="">男装</a></li>
+									<li><a href="">内衣</a></li>
+									<li><a href="">鞋靴</a></li>
+									<li><a href="">箱包</a></li>
+								</ul>
+							</div>
+							<div class="three-box">
+								<h3>阿里APP</h3>
+								<ul>
+									<li><a href="">淘宝</a></li>
+									<li><a href="">天猫</a></li>
+									<li><a href="">支付宝</a></li>
+									<li><a href="">聚划算</a></li>
+									<li><a href="">飞猪</a></li>
+									<li><a href="">女装</a></li>
+									<li><a href="">男装</a></li>
+									<li><a href="">内衣</a></li>
+									<li><a href="">鞋靴</a></li>
+									<li><a href="">箱包</a></li>
+								</ul>
+							</div>
+							<div class="four-box">
+								<h3>精彩推荐集</h3>
+								<ul>
+									<li><a href="">余额宝</a></li>
+									<li><a href="">大牌捡包</a></li>
+									<li><a href="">淘公仔</a></li>
+									<li><a href="">浏览器</a></li>
+									<li><a href="">大众</a></li>
+									<li><a href="">女装</a></li>
+									<li><a href="">男装</a></li>
+									<li><a href="">内衣</a></li>
+									<li><a href="">鞋靴</a></li>
+									<li><a href="">箱包</a></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="xuanfu">
+			<img src="img/117.jpg"/>
+			<form>
+					<input class="inp1" type="text" value=""/>
+					<input class="inp2" type="text" placeholder="请输入你要输入的物品："/>
+					<input class="inp3" type="text" value=""/>
+					<input class="inp4" type="submit" value="搜索"/>
+					<ul id="list1">
+					
+				    </ul>
+			</form>
+		</div>
+		<div class="b-box">
+			<div class="left">
+				<div class="left-t">
+					<ul>
+						<li><a href="#">所有宝贝</a></li>
+						<li><a href="#">天猫</a></li>
+						<li><a href="#">二手</a></li>
+					</ul>
+				</div>
+				<div class="left-m">
+					<ul>
+						<li><a href="#">辣条</a></li>
+						<li><a href="#">饼干</a></li>
+						<li><a href="#">良品铺子</a></li>
+						<li><a href="#">三只松鼠</a></li>
+						<li><a href="#">面包</a></li>
+						<li><a href="#">卫龙</a></li>
+						<li><a href="#">小零食</a></li>
+						<li><a href="#">百草味</a></li>
+						<li><a href="#">网红零食</a></li>
+						<li><a href="#">小吃</a></li>
+						<li><a href="#">周黑鸭</a></li>
+						<li><a href="#">零食辣</a></li>
+						<li><a href="#">进口零食</a></li>
+						<li><a href="#">薯片</a></li>
+					</ul>
+				</div>
+				<div class="left-b">
+					<ul>
+						<li>
+							<a href="./detail.html?__hbt=1551318530200" target="_blank"><img src=""/></a>
+							<p></p>
+							<p>
+								<span></span>
+								<span>123人付款</span>
+							</p>
+						</li>
+						<li>
+							<a href="./detail.html?__hbt=1551318530200" target="_blank"><img src=""/></a>
+							<p></p>
+							<p>
+								<span></span>
+								<span>123人付款</span>
+							</p>
+						</li>
+						<li>
+							<a href="./detail.html?__hbt=1551318530200" target="_blank"><img src=""/></a>
+							<p></p>
+							<p>
+								<span></span>
+								<span>123人付款</span>
+							</p>
+						</li>
+						<li>
+							<a href="./detail.html?__hbt=1551318530200" target="_blank"><img src=""/></a>
+							<p></p>
+							<p>
+								<span></span>
+								<span>123人付款</span>
+							</p>
+						</li>
+						<li>
+							<a href="./detail.html?__hbt=1551318530200" target="_blank"><img src=""/></a>
+							<p></p>
+							<p>
+								<span></span>
+								<span>123人付款</span>
+							</p>
+						</li>
+						<li>
+							<a href="./detail.html?__hbt=1551318530200" target="_blank"><img src=""/></a>
+							<p></p>
+							<p>
+								<span></span>
+								<span>123人付款</span>
+							</p>
+						</li>
+						<li>
+							<a href="./detail.html?__hbt=1551318530200" target="_blank"><img src=""/></a>
+							<p></p>
+							<p>
+								<span></span>
+								<span>123人付款</span>
+							</p>
+						</li>
+						<li>
+							<a href="./detail.html?__hbt=1551318530200" target="_blank"><img src=""/></a>
+							<p></p>
+							<p>
+								<span></span>
+								<span>123人付款</span>
+							</p>
+						</li>
+					</ul>
+				</div>
+				<form>
+					<input class="inp1" type="text" value=""/>
+					<input class="inp2" type="text" placeholder="请输入你要输入的物品："/>
+					<input class="inp3" type="text" value=""/>
+					<input class="inp4" type="submit" value="搜索"/>
+					<ul id="list1">
+						
+					</ul>
+				</form>
+			</div>
+			<div class="right">
+				<img src="img/119.jpg"/>
+			</div>
+		</div>
+		<div class="footer">
+			<ul>
+				<li><a href="#">阿里巴巴集团</a></li>
+				<li><a href="#">淘宝网</a></li>
+				<li><a href="#">天猫</a></li>
+				<li><a href="#">聚划算</a></li>
+				<li><a href="#">全球速卖通</a></li>
+				<li><a href="#">阿里巴巴国际交易市场</a></li>
+				<li><a href="#">1688</a></li>
+				<li><a href="#">阿里妈妈</a></li>
+				<li><a href="#">飞猪</a></li>
+				<li><a href="#">阿里云计算</a></li>
+				<li><a href="#">YunOS</a></li>
+				<li><a href="#">阿里通信</a></li>
+				<li><a href="#">一淘</a></li>
+				<li><a href="#">万网</a></li>
+				<li><a href="#">高德</a></li>
+				<li><a href="#">UC</a></li>
+				<li><a href="#">友盟</a></li>
+				<li><a href="#">虾米</a></li>
+				<li><a href="#">阿里星球</a></li>
+				<li><a href="#">钉钉</a></li>
+				<li><a href="#">YunOS</a></li>
+				<li><a href="#">支付宝</a></li>
+				<li><a href="#">优酷</a></li>
+				<li><a href="#">土豆</a></li>
+				<li><a href="#">阿里健康</a></li>
+				<li><a href="#">阿里影业</a></li>
+				<li><a href="#">阿里体育</a></li>
+				<li><a href="#">网商银行</a></li>
+			</ul>
+		</div>
+		<script src="js/shangpinliebiao.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		$(function(){
+			$.get('http://47.104.244.134:8080/cartlist.do',{'token':getCookie('token')},function(data){
+				console.log(data);
+				setCookie('id',data[0].id,7);
+				$('.tr1 .slt2 a span').text(data[0].count);
+			})
+		})
+	   </script>
+	</body>
+</html>
